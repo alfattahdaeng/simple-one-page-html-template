@@ -1,0 +1,388 @@
+/* Akbar Alfattah */
+/* 2018 */
+/******************************************
+    MEDIA QUERIES ( Responsive )
+*******************************************/
+@media (max-width: 1080px) {
+
+  #middle .middleset .col-left {float: left; width: 30%; }
+  #middle .middleset .col-right{ float: right; width: 31%; }
+  #middle .middleset .col-middle{ display: inline-block; width: 36%; }
+
+}
+
+
+@media (max-width: 767px) {
+
+  #middle .middleset .col-left {float: left; width: 30%; }
+  #middle .middleset .col-right{ float: right; width: 31%; }
+  #middle .middleset .col-middle{ display: inline-block; width: 36%; }
+
+}
+
+@media (max-width: 520px){
+
+  #middle .middleset .col-left {float: left; width: 30%; }
+  #middle .middleset .col-right{ float: right; width: 31%; }
+  #middle .middleset .col-middle{ display: inline-block; width: 36%; }
+
+  #content
+  {
+    float: left;
+
+  }
+
+  #header
+  {
+    display: none;
+  }
+
+  #footer{
+    display: none;
+  }
+
+}
+
+@font-face {
+   font-family: "intro";
+   src: url('../fonts/Intro.otf');
+}
+@font-face {
+   font-family: "lora-italic";
+   src: url('../fonts/Lora-Italic.ttf');
+}
+
+@font-face {
+   font-family: "opensans-regular";
+   src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+   font-family: "opensans-bold";
+   src: url('../fonts/OpenSans-Bold.ttf');
+}
+
+@font-face {
+   font-family: "lato";
+   src: url('../fonts/Lato-Regular.ttf');
+}
+
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+*{
+margin:0px auto; /*supaya layer otomatis mengisi dan ke tengah*/
+list-style:none;
+padding:0;
+}
+
+body{
+padding-top: 50px;
+height: 100%; }
+
+#wrapper{
+display: block;
+overflow: hidden;
+margin: 0 auto;
+min-width: 1080px;
+}
+
+#header {
+  background: transparent;
+  height: 50px;
+  width:100%; /*supaya header memenuhi layar*/
+  z-index:1000; /*z-index dgn nilai besar berfungsi supaya header selalu tampil didepan*/
+  position:fixed;
+  font-size: 13px;
+  top: 0;
+}
+
+#header ul {
+  list-style: none;
+  margin-right: 250px;
+}
+
+#header ul li {
+  float: right;
+  width: 160px;
+}
+
+
+#header ul li #nav-contact{
+  background: url("../icon/i-contact.png")no-repeat left center;
+  background-size: auto 18px;
+  margin-left: 50px;
+  }
+
+#header ul li #nav-about{
+  background: url("../icon/i-about.png") no-repeat left  center;
+  background-size: auto  18px;
+  margin-left: 10px;
+}
+
+#header ul li #nav-product{
+  background: url("../icon/i-product.png") no-repeat left  center;
+  background-size: auto  18px;
+  margin-right: 20px;
+  margin-left: 20px;
+
+}
+
+
+#header ul li a {
+
+  font-family: lato;
+  font-size: 12px;
+  color: #733900;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 17px 0 0 0;
+  height: 33px;
+}
+
+#header ul li a:hover {
+  color: #242424;
+}
+
+#content{
+position:relative; /*posisi disarankan*/
+margin:0px auto ;
+-webkit-background-size: 100% 100%;
+-moz-background-size: 100% 100%;
+-o-background-size: 100% 100%;
+background-size: 100% 100%;
+
+}
+
+#footer{
+	padding: 10px 0;
+	background:#242424;
+	bottom: 0;
+	position: relative;
+	width: 100%;
+	font-size: 12px;
+  text-align: center;
+}
+	#footer p{
+		text-decoration: none;
+		color: #fff;
+	}
+
+
+#top{
+background: url('../images/top.png') no-repeat  center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+max-width: 100%;
+height: 750px;
+}
+
+
+#middle {
+  background: url('../images/mid.png') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 550px;
+  margin-top: -81px;
+}
+
+#bottom {
+  background: url('../images/bottom.png') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 900px;
+  margin-top: -81px;
+
+}
+
+.topset{
+  margin-top: 200px;
+  width: 50%;
+  float: right;
+  text-align: left;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 2s; /* Firefox < 16 */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+       -o-animation: fadein 2s; /* Opera < 12.1 */
+          animation: fadein 2s;
+}
+
+.topset h1{
+  font-family: intro;
+  font-size: 48px;
+  color:#89490c;
+  letter-spacing: 2px;
+  }
+
+.topset h2 {
+  font-family: lora-italic;
+  font-size: 18px;
+  color:#89490c;
+}
+
+.topset hr{
+   float: left;
+   height:1px;
+   border:none;
+   background-color:#89490c;
+   width: 12%;
+   margin-top: 10px;
+}
+
+.topset p {
+  font-family: opensans-regular;
+  font-size: 16px;
+  color:#89490c;
+  line-height: 30px;
+  margin-top: 20px;
+  }
+
+.bottomset{
+  margin-top: 290px;
+  width: 50%;
+  float: left;
+  text-align: right;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 2s; /* Firefox < 16 */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+       -o-animation: fadein 2s; /* Opera < 12.1 */
+          animation: fadein 2s;
+ }
+
+.bottomset h1{
+  font-family: intro;
+  font-size: 72px;
+  color:#039b39;
+  margin-top: 100px;
+  }
+
+.bottomset hr{
+  text-align: right;
+  height:1px;
+  border:none;
+  background-color:#039b39;
+  width: 20%;
+  margin-top: 20px;
+  float: right;
+   }
+
+.bottomset p {
+  font-family: opensans-italic;
+  font-size: 16px;
+	color:#bf5e00;
+  margin-top: 50px;
+  line-height: 30px;
+  }
+
+.middleset{
+  padding: 180px;
+  text-align: right;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 2s; /* Firefox < 16 */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+       -o-animation: fadein 2s; /* Opera < 12.1 */
+          animation: fadein 2s;
+}
+
+.middleset h1{
+  font-family: intro;
+  font-size: 48px;
+  color:#fff;
+  letter-spacing: 2px;
+  }
+
+.middleset h2{
+    font-family: intro;
+    font-size: 60px;
+    color:#fff;
+    letter-spacing: 2px;
+    }
+
+.middleset h4 {
+  font-family: lora-italic;
+  font-size: 15px;
+  color:#fff;
+  margin-top: 20px;
+}
+
+.middleset h3 {
+  font-family: opensans-regular;
+	font-size:14px;
+	color:#fff;
+  line-height: 25px;
+  margin-bottom: 20px;
+  }
+
+.middleset hr{
+  height:1px;
+  border:none;
+  background-color:#fff;
+  width: 30%;
+  float: right;
+  }
+
+.middleset p{
+	margin-top: 50px;
+  font-family: opensans-regular;
+	font-size:13px;
+	color:#fff;
+	text-align: left;
+  line-height: 25px;
+}
+
+
+.middleset .col-left {float: left; width: 30%; }
+.middleset .col-right{ float: right; width: 28%; }
+.middleset .col-middle{ display: inline-block; width: 33%; }
+
+
+.whitebox {
+  margin-top: 20px;
+  float: left;
+  width: 240px;
+  height: 28px;
+  background-color: #fff;
+}
+
+.whitebox h1 {
+  line-height: 28px;
+  text-align: center;
+  font-size: 14px;
+  font-family: opensans-bold;
+  color: #c17b2d;
+  text-transform: uppercase;
+}
